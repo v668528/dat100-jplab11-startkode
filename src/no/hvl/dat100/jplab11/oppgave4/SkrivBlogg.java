@@ -8,8 +8,24 @@ import no.hvl.dat100.jplab11.oppgave3.*;
 
 public class SkrivBlogg {
 
-	public static boolean skriv(Blogg samling, String mappe, String filnavn) {
+	public static boolean skriv(Blogg samling, String mappe, String filnavn) throws FileNotFoundException {
 
-		throw new UnsupportedOperationException(TODO.method());
+		boolean sjekket = false;
+		
+		do {
+			
+		try {
+		
+		PrintWriter skriver = new PrintWriter(filnavn);
+		
+		for (String samlinger: samling.getSamling()) {
+			skriver.println(samlinger);
+		}
+		
+		}
+		
+		skriver.close();
+		
+		}
 	}
 }
