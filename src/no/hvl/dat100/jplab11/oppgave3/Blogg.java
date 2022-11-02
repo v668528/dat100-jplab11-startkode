@@ -10,7 +10,7 @@ public class Blogg {
 	protected int nesteledig;
 
 	public Blogg() {
-		innleggtabell = new Innlegg[20];
+		this.innleggtabell = new Innlegg[20];
 		nesteledig = 0;
 	}
 
@@ -85,9 +85,9 @@ public class Blogg {
 	}
 	
 	public String toString() {
-		String piss = "";
+		String piss = getAntall() + "\n";
 		for (int i = 0 ; i < nesteledig ; i++) 
-			piss += innleggtabell[i].toString() + "\n";
+			piss += innleggtabell[i].toString();
 		return piss;
 	}
 
