@@ -6,7 +6,7 @@ public class Bilde extends Tekst {
 
 	// TODO - objekt variable
 	
-	private String url;
+	protected String url;
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
 		super (id,bruker,dato,tekst);

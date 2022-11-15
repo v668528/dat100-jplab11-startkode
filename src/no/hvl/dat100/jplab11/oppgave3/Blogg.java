@@ -85,10 +85,10 @@ public class Blogg {
 	}
 	
 	public String toString() {
-		String piss = getAntall() + "\n";
+		String melding = getAntall() + "\n";
 		for (int i = 0 ; i < nesteledig ; i++) 
-			piss += innleggtabell[i].toString();
-		return piss;
+			melding += innleggtabell[i].toString();
+		return melding;
 	}
 
 	// valgfrie oppgaver nedenfor
